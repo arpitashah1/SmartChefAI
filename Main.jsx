@@ -20,7 +20,14 @@ export default function Main() {
 
     return (
         <main>
-            <form action={addIngredient} className="add-ingredient-form">
+            <form 
+  className="add-ingredient-form" 
+  onSubmit={e => {
+    e.preventDefault();               // prevent page reload
+    addIngredient(new FormData(e.target));  // call your function with form data
+    e.target.reset();                 // clear input after submission (optional)
+  }}
+>
                 <input
                     type="text"
                     placeholder="e.g. oregano"
