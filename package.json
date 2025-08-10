@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s06ipc4",
-  "description": "https://scrimba.com/learn-react-c0e/~0xm2/s0ib1q1grd/head",
+  "name": "smartchef",
+  
   "scripts": {
     "start": "vite",
     "dev": "vite",
