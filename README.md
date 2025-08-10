@@ -22,6 +22,15 @@ SmartChef AI is an AI-powered recipe recommendation web application that generat
 
 ---
 
+## Usage
+
+- Enter ingredients you have into the input field and add them to the list.
+- Click the "Get Recipe" button to request an AI-generated recipe.
+- View the suggested recipe rendered in markdown format, complete with instructions.
+
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -33,5 +42,21 @@ SmartChef AI is an AI-powered recipe recommendation web application that generat
 
 1. Clone the repo  
    ```bash
-   git clone https://github.com/yourusername/smartchef-ai.git
-   cd smartchef-ai
+   git clone https://github.com/arpitashah1/SmartChefAI.git
+   cd SmartChefAI
+
+2. Install dependencies
+    ```bash
+    npm install
+
+3. Create a .env file in the root directory and add your Hugging Face API token:
+    ```bash
+    VITE_HF_ACCESS_TOKEN=your_huggingface_api_token_here
+
+4. Run the development server
+    ```bash
+    npm run dev
+
+5. Open your browser and visit http://localhost:3000 (or the URL provided in your terminal).
+
+
